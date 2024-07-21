@@ -102,7 +102,7 @@ public class SinglyLinkedList <E extends Comparable<E>> {
         return copy;
     }
 
-    public SinglyLinkedList<E> sort(){
+    public void sort (){
         boolean swap;
         if (size > 1){
             do {
@@ -128,7 +128,6 @@ public class SinglyLinkedList <E extends Comparable<E>> {
                 }
             } while (swap);
         }
-        return null;
     }
 
     public void reverse(){
