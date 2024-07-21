@@ -104,54 +104,17 @@ public class SinglyLinkedList <E extends Comparable<E>> {
         return copy;
     }
 
-    //bubble sort O^2 runtime
-    public void sortAscending(){
-        Node current = head;
-        Node index;
-        E temp;
-        while (current != null){
-            index = current.next;
-            while (index != null){
-                if (current.data.compareTo(index.data) > 0) {
-                    temp = current.data;
-                    current.data = index.data;
-                    index.data = temp;
-                }
-            index = index.next;
-            }
-        current = current.next;
-        }
-    }
-
-    public void sortDescending(){
-        Node current = head;
-        Node index;
-        E temp;
-        while (current != null){
-            index = current.next;
-            while (index != null){
-                if (current.data.compareTo(index.data) < 0) {
-                    temp = current.data;
-                    current.data = index.data;
-                    index.data = temp;
-                }
-                index = index.next;
-            }
-            current = current.next;
-        }
-    }
-
     // O (n lg n)
-    public void quickSort(Boolean ascending){
+    public void sort(Boolean ascending){
         ArrayList<E> nodeDataList = new ArrayList<>();
         Node current = head;
+
         while (current != null) {
             nodeDataList.add(current.data);
             current = current.next;
         }
 
         nodeDataList.sort(ascending ? Comparator.naturalOrder() : (node1, node2) -> node2.compareTo(node1));
-
         head = null;
 
         for (E eachNode : nodeDataList) {
