@@ -101,4 +101,66 @@ public class SinglyLinkedList <E extends Comparable<E>> {
         }
         return copy;
     }
+
+    public SinglyLinkedList<E> sort(){
+        boolean swap;
+        if (size > 1){
+            do {
+                swap = false;
+                Node current = head;
+                Node previous = null;
+                while(current.next != null){
+                    if(current.data.compareTo(current.next.data) > 0) {
+                        Node temp = current.next;
+                        current.next = temp.next;
+                        temp.next = current;
+                        if (previous == null){
+                            head = temp;
+                        } else {
+                            previous.next = temp;
+                        }
+                        previous = temp;
+                        swap = true;
+                    } else {
+                        previous = current;
+                        current = current.next;
+                    }
+                }
+            } while (swap);
+        }
+        return null;
+    }
+
+    public void reverse(){
+        if (head == null || head.next == null){
+            return;
+        }
+        Node previous = null;
+        Node current = head;
+        Node next = null;
+        while (current != null){
+            next = current.next;
+            current.next = previous;
+            previous = current;
+            current = next;
+        }
+        head = previous;
+    }
+
+    public SinglyLinkedList<E> slice(int start, int end){
+        if (start < 0 || end > size || start >= end) {
+            throw new IllegalArgumentException("Invalid slice indices");
+        }
+        SinglyLinkedList<E> sliced = new SinglyLinkedList<>();
+        Node current = head;
+        int index = 0;
+        while (current != null){
+            if (index >= start && index < end){
+                sliced.add(current.data);
+            }
+            current = current.next;
+            index++;
+        }
+        return sliced;
+    }
 }

@@ -38,7 +38,7 @@ public class SinglyLinkedListTest {
     }
 
     @Test
-    public void remove(){
+    public void testRemove(){
         list.add(1);
         list.add(2);
         list.remove(1);
@@ -46,23 +46,53 @@ public class SinglyLinkedListTest {
     }
 
     @Test
-    public void contains(){
+    public void testContains(){
         list.add(1);
         list.add(2);
         Assert.assertTrue(list.contains(2));
     }
 
     @Test
-    public void find(){
+    public void testFind(){
         list.add(1);
         Assert.assertEquals(0,list.find(1));
     }
 
     @Test
-    public void copy(){
+    public void testCopy(){
         list.add(1);
         list.add(2);
         SinglyLinkedList<Integer> copy = list.copy();
         Assert.assertNotSame(list, copy);
+    }
+
+    @Test
+    public void testSort(){
+        list.add(3);
+        list.add(2);
+        list.add(1);
+        list.sort();
+        Integer expected = 1;
+        Assert.assertEquals(expected, list.get(0));
+    }
+
+    @Test
+    public void testReverse(){
+        list.add(3);
+        list.add(2);
+        list.reverse();
+        Integer expected = 2;
+        Assert.assertEquals(expected, list.get(0));
+    }
+
+    @Test
+    public void testSlice(){
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        SinglyLinkedList<Integer> slice = list.slice(1,3);
+        Integer expected = 2;
+        Assert.assertEquals(expected, slice.get(0));
     }
 }
