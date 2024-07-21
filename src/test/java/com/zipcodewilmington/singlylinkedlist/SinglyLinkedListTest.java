@@ -36,4 +36,33 @@ public class SinglyLinkedListTest {
         list.add(1);
         Assert.assertEquals(1, list.size());
     }
+
+    @Test
+    public void remove(){
+        list.add(1);
+        list.add(2);
+        list.remove(1);
+        Assert.assertEquals(1,list.size);
+    }
+
+    @Test
+    public void contains(){
+        list.add(1);
+        list.add(2);
+        Assert.assertTrue(list.contains(2));
+    }
+
+    @Test
+    public void find(){
+        list.add(1);
+        Assert.assertEquals(0,list.find(1));
+    }
+
+    @Test
+    public void copy(){
+        list.add(1);
+        list.add(2);
+        SinglyLinkedList<Integer> copy = list.copy();
+        Assert.assertNotSame(list, copy);
+    }
 }

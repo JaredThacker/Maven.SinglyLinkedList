@@ -42,7 +42,7 @@ public class SinglyLinkedList <E extends Comparable<E>> {
     }
 
     public E get(int index){
-        if (index < 0 || index > size){
+        if (index < 0 || index >= size){
             throw new IndexOutOfBoundsException("Index " + index + "out of bounds" + size);
         }
         Node current = head;
@@ -50,5 +50,55 @@ public class SinglyLinkedList <E extends Comparable<E>> {
             current = current.next;
         }
         return current.data;
+    }
+
+    public void remove(int index){
+        if (index < 0 || index >= size){
+            throw new IndexOutOfBoundsException("Index " + index + "out of bounds" + size);
+        }
+        if (index == 0){
+            head = head.next;
+        } else {
+            Node current = head;
+            for (int i = 0; i < index - 1; i++){
+                current = current.next;
+            }
+            current.next = current.next.next;
+        }
+        size--;
+    }
+
+    public boolean contains(E element){
+        Node current = head;
+        while (current != null){
+            if(current.data.equals(element)){
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    public int find(E element){
+        Node current = head;
+        int index = 0;
+        while(current != null) {
+            if(current.data.equals(element)){
+                return index;
+            }
+            current = current.next;
+            index++;
+        }
+       return -1;
+    }
+
+    public SinglyLinkedList<E> copy(){
+        SinglyLinkedList<E> copy = new SinglyLinkedList<>();
+        Node current = head;
+        while (current != null){
+            copy.add(current.data);
+            current = current.next;
+        }
+        return copy;
     }
 }
