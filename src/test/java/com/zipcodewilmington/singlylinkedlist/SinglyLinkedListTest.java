@@ -67,12 +67,54 @@ public class SinglyLinkedListTest {
     }
 
     @Test
-    public void testSort(){
+    public void testSortAscending1(){
         list.add(3);
         list.add(2);
         list.add(1);
-        list.sort();
+        list.sortAscending();
         Integer expected = 1;
+        Assert.assertEquals(expected, list.get(0));
+    }
+
+    @Test
+    public void testSortAscending2(){
+        list.add(5);
+        list.add(1);
+        list.add(3);
+        list.add(4);
+        list.add(2);
+        list.sortAscending();
+        Integer expected = 1;
+        Assert.assertEquals(expected, list.get(0));
+    }
+
+    @Test
+    public void testSortDescending(){
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.sortDescending();
+        Integer expected = 3;
+        Assert.assertEquals(expected, list.get(0));
+    }
+
+    @Test
+    public void quickSortAscending(){
+        list.add(3);
+        list.add(2);
+        list.add(1);
+        list.quickSort(true);
+        Integer expected = 1;
+        Assert.assertEquals(expected, list.get(0));
+    }
+
+    @Test
+    public void quickSortDescending(){
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.quickSort(false);
+        Integer expected = 3;
         Assert.assertEquals(expected, list.get(0));
     }
 
