@@ -104,7 +104,6 @@ public class SinglyLinkedList <E extends Comparable<E>> {
         return copy;
     }
 
-    // O (n lg n)
     public void sort(Boolean ascending){
         ArrayList<E> nodeDataList = new ArrayList<>();
         Node current = head;
