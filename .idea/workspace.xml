@@ -240,7 +240,7 @@
     "last_opened_file_path": "/Users/jared/Dev/Projects/Maven.SinglyLinkedList"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.testSort">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -438,8 +438,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SinglyLinkedListTest.testSort" />
         <item itemvalue="JUnit.SinglyLinkedListTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.testSort" />
         <item itemvalue="JUnit.SinglyLinkedListTest.slice" />
         <item itemvalue="JUnit.SinglyLinkedListTest.reverse" />
         <item itemvalue="JUnit.SinglyLinkedListTest.sort" />

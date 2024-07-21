@@ -103,30 +103,20 @@ public class SinglyLinkedList <E extends Comparable<E>> {
     }
 
     public void sort (){
-        boolean swap;
-        if (size > 1){
-            do {
-                swap = false;
-                Node current = head;
-                Node previous = null;
-                while(current.next != null){
-                    if(current.data.compareTo(current.next.data) > 0) {
-                        Node temp = current.next;
-                        current.next = temp.next;
-                        temp.next = current;
-                        if (previous == null){
-                            head = temp;
-                        } else {
-                            previous.next = temp;
-                        }
-                        previous = temp;
-                        swap = true;
-                    } else {
-                        previous = current;
-                        current = current.next;
-                    }
+        Node current = head;
+        Node index;
+        E temp;
+        while (current != null){
+            index = current.next;
+            while (index != null){
+                if (current.data.compareTo(index.data) > 0) {
+                    temp = current.data;
+                    current.data = index.data;
+                    index.data = temp;
                 }
-            } while (swap);
+            index = index.next;
+            }
+        current = current.next;
         }
     }
 
