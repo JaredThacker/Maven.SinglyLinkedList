@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,31 +216,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.SinglyLinkedListTest.contains.executor": "Run",
-    "JUnit.SinglyLinkedListTest.copy.executor": "Run",
-    "JUnit.SinglyLinkedListTest.executor": "Run",
-    "JUnit.SinglyLinkedListTest.find.executor": "Run",
-    "JUnit.SinglyLinkedListTest.quickSortAscending.executor": "Run",
-    "JUnit.SinglyLinkedListTest.quickSortDescending.executor": "Run",
-    "JUnit.SinglyLinkedListTest.remove.executor": "Run",
-    "JUnit.SinglyLinkedListTest.reverse.executor": "Run",
-    "JUnit.SinglyLinkedListTest.slice.executor": "Run",
-    "JUnit.SinglyLinkedListTest.sort.executor": "Run",
-    "JUnit.SinglyLinkedListTest.testAdd.executor": "Run",
-    "JUnit.SinglyLinkedListTest.testAddGet.executor": "Run",
-    "JUnit.SinglyLinkedListTest.testGet.executor": "Run",
-    "JUnit.SinglyLinkedListTest.testSize.executor": "Run",
-    "JUnit.SinglyLinkedListTest.testSort.executor": "Run",
-    "JUnit.SinglyLinkedListTest.testSortDescending.executor": "Run",
-    "JUnit.com.zipcodewilmington.singlylinkedlist in singlylinkedlist.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/jared/Dev/Projects/Maven.SinglyLinkedList"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.SinglyLinkedListTest.contains.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.copy.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.find.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.quickSortAscending.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.quickSortDescending.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.remove.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.reverse.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.slice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.sort.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.testAdd.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.testAddGet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.testGet.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.testSize.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.testSort.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SinglyLinkedListTest.testSortDescending.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.com.zipcodewilmington.singlylinkedlist in singlylinkedlist.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jared/Dev/Projects/Maven.SinglyLinkedList&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.SinglyLinkedListTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />

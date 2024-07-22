@@ -113,7 +113,7 @@ public class SinglyLinkedList <E extends Comparable<E>> {
             current = current.next;
         }
 
-        nodeDataList.sort(ascending ? Comparator.naturalOrder() : (node1, node2) -> node2.compareTo(node1));
+        nodeDataList.sort(ascending ? Comparator.naturalOrder() : Comparator.reverseOrder());
         head = null;
 
         for (E eachNode : nodeDataList) {
